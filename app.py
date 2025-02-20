@@ -16,7 +16,9 @@ totale = cellularita + megacariociti + fibrosi + eritroide + granulocitaria
 st.write("### Punteggio Totale:", totale)
 
 # Interpretazione del punteggio
-if totale >= 4 and totale <= 8:
+if totale >= 0 and totale <= 3:
+    diagnosi = "Midollo normale"
+elif totale >= 4 and totale <= 8:
     diagnosi = "Trombocitemia Essenziale (ET)"
 elif totale >= 9 and totale <= 12:
     diagnosi = "Policitemia Vera (PV)"
